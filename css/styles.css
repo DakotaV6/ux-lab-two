@@ -1,0 +1,125 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fa-dog {
+    font-size: 55px;
+}
+.slogan {
+    padding-top: 5px;
+}
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+.h1 {
+    font-size: 25px;
+}
+.h2 {
+    font-size: 17px;
+    text-align: center;
+    padding: 5px;
+}
+.inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+input {
+    padding: 6px;
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid lightgray;
+}
+.pswrd-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+button {
+    font-size: 17px;
+    color: #FEFCFC;
+    background-color: #1B998B;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+}
+.forgot {
+    font-size: 10px;
+    padding: 0px 5px 5px 5px;
+    margin-bottom: 5px;
+}
+
+/* CREATE ACCOUNT BUTTON */
+.account {
+    font-size: 17px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #5ae2d3;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    input {
+        width: 50%;
+        margin: 10px;
+    }
+    .inputs {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .pswrd-container {
+        align-items: flex-end;
+        width: 45%;
+    }
+    .pswrd {
+        width: 100%;
+        margin-right: 0;
+    }
+    .forgot {
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 20px 0px 20px;
+        border-bottom: 3px solid #1B998B;
+
+    }
+    .fa-dog {
+        margin-right: 92.5px;
+    }
+    .main-container {
+        margin-top: 50px;
+    }
+
+}
